@@ -1,0 +1,50 @@
+{
+  "name": "vue3-template",
+  "version": "0.0.0",
+  "scripts": {
+    "dev:client": "cross-env VITE_BUILD_VARIANTS=${VITE_BUILD_VARIANTS:-local} NODE_ENV=development VITE_API_URL=${VITE_API_URL:-http://localhost:7001} vite src/client --root src/client --port 3000 --config src/client/vite.config.js --open",
+    "dev:dashboard": "cross-env VITE_BUILD_VARIANTS=${VITE_BUILD_VARIANTS:-local} NODE_ENV=development VITE_API_URL=${VITE_API_URL:-http://localhost:7001} vite src/dashboard --root src/dashboard --port 4200 --config src/dashboard/vite.config.js --open",
+    "build:client": "cross-env VITE_BUILD_VARIANTS=${VITE_BUILD_VARIANTS:-production} NODE_ENV=production VITE_API_URL=${VITE_API_URL:-http://localhost:7001} vite build src/client --root src/client --config src/client/vite.config.js --emptyOutDir",
+    "build:dashboard": "cross-env VITE_BUILD_VARIANTS=${VITE_BUILD_VARIANTS:-production} NODE_ENV=production VITE_API_URL=${VITE_API_URL:-http://localhost:7001} vite build src/dashboard --root src/dashboard --config src/dashboard/vite.config.js --emptyOutDir",
+    "analyse:client": "cross-env NODE_ENV=production analyse=true vite build src/client --root src/client --config src/client/vite.config.js --emptyOutDir",
+    "analyse:dashboard": "cross-env NODE_ENV=production analyse=true vite build src/dashboard --root src/dashboard --config src/dashboard/vite.config.js --emptyOutDir",
+    "serve:client": "vite preview src/client --root src/client --config src/client/vite.config.js --port 3000",
+    "serve:dashboard": "vite preview src/dashboard --root src/dashboard --config src/dashboard/vite.config.js --port 4200",
+    "format": "prettier '**/*.{js,json,ts,vue,md,yml,yaml}' !**/dist/** !./dist/** !**/coverage/** --write --no-semi --single-quote --trailing-comma none && yarn lint --fix",
+    "lint": "eslint '**/*.{js,vue}'",
+    "test": "jest --passWithNoTests"
+  },
+  "resolutions": {
+    "lodash": "^4.17.21"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^6.0.1",
+    "ant-design-vue": "^2.2.6",
+    "antd-dayjs-vite-plugin": "^1.1.4",
+    "@vueuse/head": "^0.6.0",
+    "axios": "^0.21.4",
+    "big.js": "^6.1.1",
+    "cross-env": "^7.0.3",
+    "dayjs": "^1.10.6",
+    "jest": "^27.1.0",
+    "lodash": "^4.17.21",
+    "nprogress": "^0.2.0",
+    "vite-plugin-pages": "^0.18.0",
+    "vite-plugin-vue-layouts": "^0.4.1",
+    "vite-plugin-windicss": "^1.5.1",
+    "vue": "^3.2.16",
+    "vue-router": "^4.0.11",
+    "vue-i18n": "^9.2.0-beta.13",
+    "async-validator": "^4.0.3",
+    "autoprefixer": "^10.3.4",
+    "postcss": "^8.3.6",
+    "windicss": "^3.2.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "@vue/compiler-sfc": "^3.2.6",
+    "rollup-plugin-visualizer": "^5.5.2",
+    "unplugin-vue-components": "^0.14.12",
+    "vite": "^2.6.4"
+  }
+}

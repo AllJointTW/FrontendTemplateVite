@@ -1,0 +1,35 @@
+{
+  "root": true,
+  "globals": {
+    "defineProps": "readonly",
+    "defineEmits": "readonly",
+    "defineExpose": "readonly"
+  },
+  "extends": [
+    "plugin:vue/vue3-recommended",
+    "eslint:recommended",
+    "plugin:jest/recommended",
+    "airbnb-base",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "env": { "jest": true },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      { "singleQuote": true, "semi": false, "trailingComma": "none" }
+    ],
+    "import/no-extraneous-dependencies": "warn",
+    "no-irregular-whitespace": "warn"
+  },
+  "settings": {
+    "import/resolver": { "alias": { "map": [["client", "./src/client/src"]] } },
+    "import/resolver": { "alias": { "map": [["dashboard", "./src/dashboard/src"]] } },
+    "import/extensions": [".js", ".jsx", ".json", ".mjs", ".vue"]
+  },
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "allowImportExportEverywhere": false
+  },
+  "parser": "vue-eslint-parser"
+}
