@@ -10,16 +10,37 @@
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@commitlint/cz-commitlint": "^15.0.0",
+    "@vitejs/plugin-vue": "^1.10.0",
     "commitizen": "^4.2.4",
-    "husky": "^7.0.4"
+    "husky": "^7.0.4",
+    "vite": "^2.6.14"
   },
   "scripts": {
+    "format": "prettier '**/*.{js,json,ts,vue,md,yml,yaml}' !**/dist/** !./dist/** !**/coverage/** --write --no-semi --single-quote --trailing-comma none && yarn lint --fix",
+    "lint": "eslint '**/*.{js,vue}'",
+    "test": "jest --passWithNoTests",
     "postinstall": "husky install",
-    "commit": "cz"
+    "commit": "cz",
+    "dev": "yarn dev:client & yarn dev:dashboard",
+    "dev:client": "cross-env NODE_ENV=development API_URL=${API_URL:-http://localhost:7001} vite src/client --root src/client --port 3000 --config src/client/vite.config.js --open",
+    "dev:dashboard": "cross-env NODE_ENV=development API_URL=${API_URL:-http://localhost:7001} vite src/dashboard --root src/dashboard --port 4200 --config src/dashboard/vite.config.js --open",
+    "build:client": "cross-env NODE_ENV=production API_URL=${API_URL:-http://localhost:7001} vite build src/client --root src/client --config src/client/vite.config.js --emptyOutDir",
+    "build:dashboard": "cross-env NODE_ENV=production API_URL=${API_URL:-http://localhost:7001} vite build src/dashboard --root src/dashboard --config src/dashboard/vite.config.js --emptyOutDir",
+    "analyse:client": "cross-env NODE_ENV=production analyse=true vite build src/client --root src/client --config src/client/vite.config.js --emptyOutDir",
+    "analyse:dashboard": "cross-env NODE_ENV=production analyse=true vite build src/dashboard --root src/dashboard --config src/dashboard/vite.config.js --emptyOutDir",
+    "serve:client": "vite preview src/client --root src/client --config src/client/vite.config.js --port 3000",
+    "serve:dashboard": "vite preview src/dashboard --root src/dashboard --config src/dashboard/vite.config.js --port 4200"
   },
   "config": {
     "commitizen": {
       "path": "@commitlint/cz-commitlint"
     }
+  },
+  "resolutions": {
+    "lodash": "^4.17.21"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "vue": "^3.2.22"
   }
 }
