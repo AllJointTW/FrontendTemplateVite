@@ -10,10 +10,22 @@
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@commitlint/cz-commitlint": "^15.0.0",
+    "@intlify/vite-plugin-vue-i18n": "^3.2.1",
     "@vitejs/plugin-vue": "^1.10.0",
     "commitizen": "^4.2.4",
     "husky": "^7.0.4",
-    "vite": "^2.6.14"
+    "rollup-plugin-visualizer": "^5.5.2",
+    "unplugin-vue-components": "^0.14.12",
+    "vite": "^2.6.14",
+    "vite-plugin-pages": "^0.18.0",
+    "vite-plugin-vue-layouts": "^0.4.1",
+    "vite-plugin-windicss": "^1.5.1",
+    "windicss": "^3.2.1",
+    "jest": "^27.3.1",
+    "vue3-jest": "^27.0.0-alpha.1",
+    "@vue/test-utils": "^2.0.0-rc.17",
+    "@babel/preset-env": "^7.16.4",
+    "@types/jest": "^27.0.3"
   },
   "scripts": {
     "format": "prettier '**/*.{js,json,ts,vue,md,yml,yaml}' !**/dist/** !./dist/** !**/coverage/** --write --no-semi --single-quote --trailing-comma none && yarn lint --fix",
@@ -40,7 +52,21 @@
     "lodash": "^4.17.21"
   },
   "dependencies": {
+    "@ant-design/icons-vue": "^6.0.1",
+    "@vueuse/head": "^0.7.2",
+    "ant-design-vue": "^2.2.8",
+    "async-validator": "^4.0.7",
+    "axios": "^0.24.0",
+    "big.js": "^6.1.1",
     "cross-env": "^7.0.3",
-    "vue": "^3.2.22"
+    "dayjs": "^1.10.7",
+    "js-cookie": "^3.0.1",
+    "lodash": "4.17.21",
+    "nprogress": "^0.2.0",
+    "numeral": "^2.0.6",
+    "vite-plugin-antd-dayjs": "^1.0.0",
+    "vue": "^3.2.22",
+    "vue-router": "^4.0.11",
+    "vue-i18n": "^9.2.0-beta.21"
   }
 }
