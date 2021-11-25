@@ -10,6 +10,7 @@
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@commitlint/cz-commitlint": "^15.0.0",
+    "@intlify/vite-plugin-vue-i18n": "^3.2.1",
     "@vitejs/plugin-vue": "^1.10.0",
     "commitizen": "^4.2.4",
     "husky": "^7.0.4",
@@ -46,6 +47,8 @@
     "lodash": "^4.17.21"
   },
   "dependencies": {
+    "@ant-design/icons-vue": "^6.0.1",
+    "ant-design-vue": "^2.2.8",
     "async-validator": "^4.0.7",
     "axios": "^0.24.0",
     "big.js": "^6.1.1",
@@ -55,6 +58,8 @@
     "lodash": "4.17.21",
     "nprogress": "^0.2.0",
     "numeral": "^2.0.6",
-    "vue": "^3.2.22"
+    "vite-plugin-antd-dayjs": "^1.0.0",
+    "vue": "^3.2.22",
+    "vue-i18n": "^9.2.0-beta.21"
   }
 }

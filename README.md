@@ -53,13 +53,13 @@
 - [x] [vite-plugin-vue-layouts](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - 方便的設定 `Layout`
 - [x] [rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer) - 圖像化分析 `bundle` 檔案的大小
 - [x] [vite-plugin-windicss](https://github.com/windicss/vite-plugin-windicss) - 設計給 `Vite` 用，近似 `tailwind.css` 的套件
-- [ ] vite-plugin-i18n：需要找一下
+- [x] [vite-plugin-vue-i18n](https://github.com/intlify/vite-plugin-vue-i18n) - i18n 套件
 
 **介面 UI***
 - [x] [Windi CSS](https://windicss.org/) - 用於前台樣式
-- [ ] [https://2x.antdv.com/docs/vue/introduce/](https://2x.antdv.com/docs/vue/introduce/) - 用於後台樣式
-- [ ] [@ant-design/icons-vue](https://github.com/ant-design/ant-design-icons/tree/master/packages/icons-vue) - 用於後台樣式 `Ant Design` Icon 載入
-- [ ] [antd-dayjs-vite-plugin](https://github.com/nekocode/antd-dayjs-vite-plugin) - 用於後台樣式把 `Ant Design` 的 `moment.js` 換成 `day.js`
+- [x] [https://2x.antdv.com/docs/vue/introduce/](https://2x.antdv.com/docs/vue/introduce/) - 用於後台樣式
+- [x] [@ant-design/icons-vue](https://github.com/ant-design/ant-design-icons/tree/master/packages/icons-vue) - 用於後台樣式 `Ant Design` Icon 載入
+- [x] [antd-dayjs-vite-plugin](https://github.com/nekocode/antd-dayjs-vite-plugin) - 用於後台樣式把 `Ant Design` 的 `moment.js` 換成 `day.js`
 
 ### 常用設定
 - Alias `@` to src/client/src
@@ -68,7 +68,6 @@
 ### 常用功能
 - 公用程式 Utils
   - [ ] delay
-  - [ ] getCookie
   - [ ] createQueryString
   - [ ] handleTableChangeWrapper
 - 後台 Dashboard
