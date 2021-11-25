@@ -13,7 +13,13 @@
     "@vitejs/plugin-vue": "^1.10.0",
     "commitizen": "^4.2.4",
     "husky": "^7.0.4",
-    "vite": "^2.6.14"
+    "rollup-plugin-visualizer": "^5.5.2",
+    "unplugin-vue-components": "^0.14.12",
+    "vite": "^2.6.14",
+    "vite-plugin-pages": "^0.18.0",
+    "vite-plugin-vue-layouts": "^0.4.1",
+    "vite-plugin-windicss": "^1.5.1",
+    "windicss": "^3.2.1"
   },
   "scripts": {
     "format": "prettier '**/*.{js,json,ts,vue,md,yml,yaml}' !**/dist/** !./dist/** !**/coverage/** --write --no-semi --single-quote --trailing-comma none && yarn lint --fix",
@@ -40,7 +46,15 @@
     "lodash": "^4.17.21"
   },
   "dependencies": {
+    "async-validator": "^4.0.7",
+    "axios": "^0.24.0",
+    "big.js": "^6.1.1",
     "cross-env": "^7.0.3",
+    "dayjs": "^1.10.7",
+    "js-cookie": "^3.0.1",
+    "lodash": "4.17.21",
+    "nprogress": "^0.2.0",
+    "numeral": "^2.0.6",
     "vue": "^3.2.22"
   }
 }
