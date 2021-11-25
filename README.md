@@ -22,7 +22,7 @@
 
 **動態測試 Dynamic Test**
 程式跑起來看有沒有正常運作。
-- [ ] Unit Test ([Jest](https://jestjs.io/))
+- [x] Unit Test ([Jest](https://jestjs.io/))
 - [ ] E2E ([Cypress](https://www.cypress.io/))
 
 ### 流程控制 Workflow
@@ -86,4 +86,4 @@
 - [x] [約定式提交](https://www.conventionalcommits.org/zh-hant/v1.0.0-beta.4/)
 - [x] [husky](https://github.com/typicode/husky)
 - [x] [cz](https://github.com/commitizen/cz-cli)
-- [ ] GitHub PR Template
+- [x] GitHub PR Template
