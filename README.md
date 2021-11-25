@@ -57,7 +57,7 @@
 - [x] [vite-plugin-windicss](https://github.com/windicss/vite-plugin-windicss) - 設計給 `Vite` 用，近似 `tailwind.css` 的套件
 - [x] [vite-plugin-vue-i18n](https://github.com/intlify/vite-plugin-vue-i18n) - i18n 套件
 
-**介面 UI***
+**介面 UI**
 - [x] [Windi CSS](https://windicss.org/) - 用於前台樣式
 - [x] [https://2x.antdv.com/docs/vue/introduce/](https://2x.antdv.com/docs/vue/introduce/) - 用於後台樣式
 - [x] [@ant-design/icons-vue](https://github.com/ant-design/ant-design-icons/tree/master/packages/icons-vue) - 用於後台樣式 `Ant Design` Icon 載入
