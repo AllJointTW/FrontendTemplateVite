@@ -69,9 +69,11 @@
 
 ### 常用功能
 - 公用程式 Utils
-  - [ ] delay
-  - [ ] createQueryString
-  - [ ] handleTableChangeWrapper
+  - [x] delay
+  - [x] handleDate
+  - [x] 後台專用／createQueryString
+  - [x] 後台專用／handleTableChange
+  - [x] 後台專用／checkIsAdmin
 - 後台 Dashboard
   - [ ] 登入 Login Page
   - [ ] 忘記密碼 Forgot Password Page
