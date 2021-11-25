@@ -1,0 +1,25 @@
+{
+  "name": "frontend-template-vite",
+  "version": "0.0.0",
+  "description": "前端專案共用腳手架 Vite",
+  "main": "index.js",
+  "repository": "git@github.com:AllJointTW/FrontendTemplateVite.git",
+  "author": "TZU-YEN, CHANG <try_love_tom@alljoint.tw>",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@commitlint/cz-commitlint": "^15.0.0",
+    "commitizen": "^4.2.4",
+    "husky": "^7.0.4"
+  },
+  "scripts": {
+    "postinstall": "husky install",
+    "commit": "cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
+}

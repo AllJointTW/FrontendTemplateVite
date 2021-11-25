@@ -1,6 +1,13 @@
 # FrontendTemplateVite
 
 ## TODO
+
+### README.md
+- [ ] 如何貢獻程式碼
+- [ ] 如何做程式碼審核
+- [ ] 如何做 QA 測試
+...
+
 ### 架構
 在同一個專案下把 Client、Dashboard 切分不同資料夾出來。
 ### 框架
@@ -75,4 +82,5 @@
 ### 協作
 - [ ] [約定式提交](https://www.conventionalcommits.org/zh-hant/v1.0.0-beta.4/)
 - [ ] [husky](https://github.com/typicode/husky)
+- [ ] [cz](https://github.com/commitizen/cz-cli)
 - [ ] GitHub PR Template
