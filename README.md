@@ -48,6 +48,8 @@
 - [x] [Numeral.js](http://numeraljs.com/) - 格式化數字
 
 **Vue & Vite**
+- [x] [vue-router](https://next.router.vuejs.org/zh/introduction.html)
+- [x] [vueuse/head](https://github.com/vueuse/head) - 動態設定 `<head>` 標籤
 - [x] [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - 自動 `import` 元件
 - [x] [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages) - 依據資料夾自動引入 `Router`，可以做到像 `Nuxt` 自動生成路徑。
 - [x] [vite-plugin-vue-layouts](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) - 方便的設定 `Layout`

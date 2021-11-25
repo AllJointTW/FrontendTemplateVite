@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "@ant-design/icons-vue": "^6.0.1",
+    "@vueuse/head": "^0.7.2",
     "ant-design-vue": "^2.2.8",
     "async-validator": "^4.0.7",
     "axios": "^0.24.0",
@@ -60,6 +61,7 @@
     "numeral": "^2.0.6",
     "vite-plugin-antd-dayjs": "^1.0.0",
     "vue": "^3.2.22",
+    "vue-router": "^4.0.11",
     "vue-i18n": "^9.2.0-beta.21"
   }
 }
