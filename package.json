@@ -13,7 +13,7 @@
     "@vitejs/plugin-vue": "^1.10.0",
     "commitizen": "^4.2.4",
     "husky": "^7.0.4",
-    "vite": "^2.6.14"
+    "vite": "^2.9.13"
   },
   "scripts": {
     "format": "prettier '**/*.{js,json,ts,vue,md,yml,yaml}' !**/dist/** !./dist/** !**/coverage/** --write --no-semi --single-quote --trailing-comma none && yarn lint --fix",
